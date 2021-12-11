@@ -7,6 +7,24 @@ public class Main {
         honda.setModel("civic");
         System.out.println(mercedes.getModel());
         System.out.println(honda.getModel());
+
+
+        Account jacobsAccount = new Account();
+
+        jacobsAccount.setNumber("1");
+        jacobsAccount.setEmailAddress("j.short2@snhu.edu");
+        jacobsAccount.setPhoneNumber("503-503-5033");
+        jacobsAccount.setName("Jacob");
+
+        jacobsAccount.deposit(50.0);
+        jacobsAccount.withdrawal((100.0));
+        jacobsAccount.deposit(1000.0);
+        jacobsAccount.withdrawal((100.0));
+        System.out.println(jacobsAccount.getEmailAddress());
+        System.out.println(jacobsAccount.getPhoneNumber());
+        System.out.println(jacobsAccount.getName());
+
+
     }
 
 }
