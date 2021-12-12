@@ -6,6 +6,25 @@ public class Account {
     private String emailAddress;
     private String phoneNumber;
 
+    // constructor
+    public Account() {
+        this("99", 10.0, "Default Name", "Default Email", "Default Phone Number")
+        System.out.println("Empty constructor called");
+    }
+
+    // another constructor
+    public Account(String number, double balance, String name, String emailAddress, String phoneNumber) {
+        System.out.println("Constructor with parameters called");
+        this.number = number;
+        this.balance = balance;
+        this.name = name;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+    }
+
+    // can make another constructor with say 2 || 3 params
+
+
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
         System.out.println("Deposit of " + depositAmount + " made. New balance is " + this.balance);
