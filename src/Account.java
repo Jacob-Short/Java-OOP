@@ -8,7 +8,7 @@ public class Account {
 
     // constructor
     public Account() {
-        this("99", 10.0, "Default Name", "Default Email", "Default Phone Number")
+        this("99", 10.0, "Default Name", "Default Email", "Default Phone Number");
         System.out.println("Empty constructor called");
     }
 
